@@ -1,12 +1,15 @@
-# Maincrafts Cloud Computing & DevOps Internship
+# ☁️ Cloud Computing & DevOps Internship
 
-## Duration
-01 August 2026 – 01 February 2027
+## 👨‍💻 Intern
+**Basant Kumar**
 
-## Organization
+## 🏢 Organization
 Maincrafts Technology
 
-## Technologies
+## 📅 Duration
+01 August 2026 – 01 February 2027
+
+## 🛠️ Technologies
 - AWS
 - Linux
 - Git & GitHub
@@ -15,11 +18,11 @@ Maincrafts Technology
 - Terraform
 - Jenkins
 
-## Tasks
-- Task 01
-- Task 02
-- Task 03
+## 📁 Repository Structure
+- 📂 tasks
+- 📂 projects
+- 📂 notes
+- 📂 certificates
 
-## Projects
-- Project 01
-- Project 02
+## 🎯 Goal
+To build industry-ready Cloud Computing & DevOps skills through real-world projects and hands-on tasks.
