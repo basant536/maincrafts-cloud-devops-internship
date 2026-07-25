@@ -1,0 +1,3 @@
+# Internship Tasks
+
+This folder contains all weekly internship tasks.

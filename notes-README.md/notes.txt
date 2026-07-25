@@ -1,0 +1,3 @@
+# Learning Notes
+
+This folder contains notes on AWS, Linux, Docker, Kubernetes, Terraform, and DevOps.+---
