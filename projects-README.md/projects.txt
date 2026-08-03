@@ -1,3 +1,0 @@
-# Internship Projects
-
-This folder contains all Cloud & DevOps projects completed during the internship.
