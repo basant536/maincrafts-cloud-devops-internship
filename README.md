@@ -58,13 +58,13 @@ Portfolio/
 ## 🔗 Project Links
 
 **GitHub Repository:**  
-(Paste your GitHub repository link here)
+(https://github.com/basant536/maincrafts-cloud-devops-internship/)
 
 **AWS CloudFront URL:**  
-(Paste your CloudFront URL here)
+(https://dmvy6ix9zt4da.cloudfront.net/)
 
 **GitHub Pages URL:**  
-(Paste your GitHub Pages URL here)
+(https://basant536.github.io/maincrafts-cloud-devops-internship/)
 
 ---
 
@@ -80,6 +80,6 @@ This project was completed as part of the **AWS Cloud & DevOps Internship** cond
 
 **Email:** basantkumar222006@gmail.com
 
-**LinkedIn:** (Paste your LinkedIn profile link)
+**LinkedIn:** (https://www.linkedin.com/in/basant-k-27062b255?utm_source=share_via&utm_content=profile&utm_medium=member_android)
 
 **GitHub:** (Paste your GitHub profile link)
