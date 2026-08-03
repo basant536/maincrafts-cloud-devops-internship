@@ -66,6 +66,8 @@ Portfolio/
 **GitHub Pages URL:**  
 (https://basant536.github.io/maincrafts-cloud-devops-internship/)
 
+**Linkdin Post URL:** (https://lnkd.in/p/g25MjWPy)
+
 ---
 
 ## 🙏 Acknowledgement
@@ -81,5 +83,3 @@ This project was completed as part of the **AWS Cloud & DevOps Internship** cond
 **Email:** basantkumar222006@gmail.com
 
 **LinkedIn:** (https://www.linkedin.com/in/basant-k-27062b255?utm_source=share_via&utm_content=profile&utm_medium=member_android)
-
-**GitHub:** (Paste your GitHub profile link)
