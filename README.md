@@ -52,6 +52,9 @@ Portfolio/
 │   └── profile.jpeg
 └── README.md
 ```
+## 🎥 Demo Video
+
+A deployment demonstration video is available in this repository for project verification.
 
 ---
 
