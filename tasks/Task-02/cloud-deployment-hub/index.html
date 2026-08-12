@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Cloud Deployment Hub | Docker & AWS</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">CloudDeploy<span>Hub</span></div>
+
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#cloud">Cloud</a></li>
+                <li><a href="#docker">Docker</a></li>
+                <li><a href="#deployment">Deployment</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+
+        <div class="hero-content">
+
+            <div class="badge">
+                ☁️ Cloud & DevOps Project
+            </div>
+
+            <h1>
+                Build. <span>Containerize.</span><br>
+                Deploy.
+            </h1>
+
+            <p>
+                A practical demonstration of containerizing a web application
+                with Docker and deploying it on an AWS EC2 cloud virtual machine.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#deployment" class="btn primary-btn">
+                    Explore Deployment
+                </a>
+
+                <a href="#docker" class="btn secondary-btn">
+                    Learn Docker
+                </a>
+            </div>
+
+        </div>
+
+        <div class="hero-card">
+
+            <div class="terminal-header">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <div class="terminal">
+                <p><span class="green">$</span> docker build -t cloud-app .</p>
+                <p><span class="green">$</span> docker run -d -p 80:80 cloud-app</p>
+                <p><span class="green">$</span> ssh ubuntu@ec2-server</p>
+                <p class="success">✓ Container deployed successfully</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Cloud Section -->
+    <section id="cloud" class="section">
+
+        <div class="section-heading">
+            <span>01</span>
+            <h2>Cloud Computing</h2>
+            <p>
+                Cloud platforms provide scalable computing resources
+                without requiring physical infrastructure.
+            </p>
+        </div>
+
+        <div class="cards">
+
+            <div class="card">
+                <div class="icon">☁️</div>
+                <h3>Cloud Infrastructure</h3>
+                <p>
+                    Use cloud-based virtual machines and services
+                    to host and run applications.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="icon">⚡</div>
+                <h3>Scalability</h3>
+                <p>
+                    Cloud infrastructure makes it easier to scale
+                    applications according to demand.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="icon">🔐</div>
+                <h3>Secure Deployment</h3>
+                <p>
+                    Configure cloud resources and network access
+                    to securely expose applications.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Docker Section -->
+    <section id="docker" class="section dark-section">
+
+        <div class="section-heading">
+            <span>02</span>
+            <h2>Why Docker?</h2>
+            <p>
+                Docker packages an application and its dependencies
+                into a portable container.
+            </p>
+        </div>
+
+        <div class="docker-flow">
+
+            <div class="flow-item">
+                <div class="flow-number">01</div>
+                <h3>Application</h3>
+                <p>Build the web application.</p>
+            </div>
+
+            <div class="arrow">→</div>
+
+            <div class="flow-item">
+                <div class="flow-number">02</div>
+                <h3>Dockerfile</h3>
+                <p>Define the container environment.</p>
+            </div>
+
+            <div class="arrow">→</div>
+
+            <div class="flow-item">
+                <div class="flow-number">03</div>
+                <h3>Image</h3>
+                <p>Build a portable Docker image.</p>
+            </div>
+
+            <div class="arrow">→</div>
+
+            <div class="flow-item">
+                <div class="flow-number">04</div>
+                <h3>Container</h3>
+                <p>Run the application in isolation.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Deployment Section -->
+    <section id="deployment" class="section">
+
+        <div class="section-heading">
+            <span>03</span>
+            <h2>AWS EC2 Deployment</h2>
+            <p>
+                The containerized application is deployed on an
+                AWS EC2 cloud virtual machine.
+            </p>
+        </div>
+
+        <div class="deployment-container">
+
+            <div class="deployment-step">
+                <strong>01</strong>
+                <h3>Build Image</h3>
+                <p>Create the Docker image locally.</p>
+            </div>
+
+            <div class="deployment-step">
+                <strong>02</strong>
+                <h3>Launch EC2</h3>
+                <p>Launch an AWS EC2 virtual machine.</p>
+            </div>
+
+            <div class="deployment-step">
+                <strong>03</strong>
+                <h3>Install Docker</h3>
+                <p>Configure Docker on the cloud VM.</p>
+            </div>
+
+            <div class="deployment-step">
+                <strong>04</strong>
+                <h3>Deploy Container</h3>
+                <p>Run the application container on EC2.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Technology Section -->
+    <section class="tech-section">
+
+        <h2>Technology Stack</h2>
+
+        <div class="tech-list">
+            <span>HTML5</span>
+            <span>CSS3</span>
+            <span>Docker</span>
+            <span>AWS EC2</span>
+            <span>Linux</span>
+            <span>Git & GitHub</span>
+        </div>
+
+    </section>
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
+
+        <div class="section-heading">
+            <span>04</span>
+            <h2>Project Information</h2>
+            <p>
+                This project demonstrates a practical Cloud & DevOps
+                deployment workflow using Docker and AWS EC2.
+            </p>
+        </div>
+
+        <a href="mailto:basantkumar222006@gmail.com" class="btn primary-btn">
+            Contact Me
+        </a>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+        <p>
+            © 2026 CloudDeployHub | Cloud & DevOps Project
+        </p>
+    </footer>
+
+</body>
+</html>
