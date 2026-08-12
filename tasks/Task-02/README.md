@@ -165,7 +165,7 @@ Live web application
 
 ## 🔗 LinkedIn Post
 
-[https://lnkd.in/p/gpHj8tzk]
+Link:- https://lnkd.in/p/gpHj8tzk
 
 
 ---
