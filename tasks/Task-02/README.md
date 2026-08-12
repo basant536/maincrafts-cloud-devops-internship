@@ -93,3 +93,9 @@ SSH-based server access
 Docker deployment on a cloud VM
 Security Group configuration
 Public access to a containerized web application
+
+🏁 Conclusion
+
+The web application was successfully containerized using Docker, published to Docker Hub, and deployed on an AWS EC2 Ubuntu Server instance.
+
+The deployed application was successfully verified through the EC2 public IPv4 address..
