@@ -163,6 +163,9 @@ Running Docker container
 
 Live web application
 
+## 🔗 LinkedIn Post
+
+[https://lnkd.in/p/gpHj8tzk]
 
 
 ---
