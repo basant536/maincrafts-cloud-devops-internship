@@ -4,12 +4,17 @@
 
 To containerize a web application using Docker and deploy the Docker container on an AWS EC2 cloud virtual machine.
 
+---
+
 ## 📝 Project Overview
 
-In this task, I created a simple web application and containerized it using Docker.
-The Docker image was tested locally, pushed to Docker Hub, and then deployed on an AWS EC2 Ubuntu instance.
+In this task, I created a web application and containerized it using Docker.
+
+The Docker image was tested locally, pushed to Docker Hub, and then deployed on an AWS EC2 Ubuntu Server instance.
 
 The application was successfully accessed through the EC2 public IPv4 address.
+
+---
 
 ## 🛠️ Technologies Used
 
@@ -23,76 +28,175 @@ The application was successfully accessed through the EC2 public IPv4 address.
 - Git & GitHub
 - PowerShell / Terminal
 
+---
+
 ## 🔄 Deployment Workflow
 
-Local Web Application
-        ↓
+```text
+Web Application
+      ↓
+Dockerfile
+      ↓
 Docker Image
-        ↓
+      ↓
 Docker Container (Local)
-        ↓
+      ↓
 Docker Hub
-        ↓
+      ↓
 AWS EC2
-        ↓
+      ↓
 Docker Container
-        ↓
+      ↓
 Public IPv4 Address
-        ↓
+      ↓
 Live Web Application
 
-## 📂 Project Structure
 
-```text
+---
+
+📂 Project Structure
+
 Task-02/
+│
 ├── README.md
-├── index.html
-├── style.css
-├── Dockerfile
-└── screenshots/
+│
+├── cloud-deployment-hub/
+│   ├── Dockerfile
+│   ├── index.html
+│   └── style.css
+│
+├── screenshot/
+│
+└── videos/
+
+
+---
 
 🐳 Docker Implementation
-Build Docker Image
+
+1. Build Docker Image
+
 docker build -t cloud-deployment-hub .
-Run Container Locally
+
+2. Run Container Locally
+
 docker run -d -p 8080:80 --name cloud-deployment-container cloud-deployment-hub
+
 The application was tested locally through the browser.
 
+
+---
+
 ☁️ Docker Hub
-The Docker image was tagged and pushed to Docker Hub:
+
+The Docker image was tagged and pushed to Docker Hub.
+
+Tag the Image
+
 docker tag cloud-deployment-hub basant222006/cloud-deployment-hub:latest
+
+Push the Image
+
 docker push basant222006/cloud-deployment-hub:latest
 
+Docker Hub Image
+
+basant222006/cloud-deployment-hub:latest
+
+
+---
+
 🚀 AWS EC2 Deployment
+
 An Ubuntu Server EC2 instance was launched on AWS.
-Docker was installed on the EC2 instance and the Docker image was pulled from Docker Hub:
+
+Docker was configured on the EC2 instance and the application image was pulled from Docker Hub.
+
+Pull Docker Image
+
 sudo docker pull basant222006/cloud-deployment-hub:latest
-The container was then started using:
+
+Run Docker Container
+
 sudo docker run -d --name cloud-deployment-container -p 80:80 basant222006/cloud-deployment-hub:latest
 
+
+---
+
 🔐 Security Configuration
-The EC2 Security Group was configured to allow:
-SSH – Port 22 – My IP
-HTTP – Port 80 – Anywhere IPv4
-This allowed SSH access for administration and HTTP access to the deployed web application.
+
+The EC2 Security Group was configured with the following inbound rules:
+
+Protocol	Port	Source	Purpose
+
+SSH	22	My IP	Server administration
+HTTP	80	0.0.0.0/0	Web application access
+
+
+
+---
 
 ✅ Verification
-The running container was verified using:
+
+The running Docker container was verified using:
+
 sudo docker ps
+
 The application was successfully accessed through the EC2 public IPv4 address using HTTP.
 
+
+---
+
 📸 Proof of Work
-Screenshots and deployment video have been captured as proof of successful deployment.
+
+Screenshots demonstrating the deployment process are available in the screenshot/ directory.
+
+The proof includes:
+
+Docker image creation
+
+Docker Hub image
+
+AWS EC2 instance
+
+Running Docker container
+
+Live web application
+
+
+
+---
+
+🎥 Deployment Video
+
+The deployment demonstration video is available in the videos/ directory.
+
+The video demonstrates accessing the successfully deployed web application through the EC2 public IPv4 address.
+
+
+---
 
 🎯 Key Learnings
+
 Docker image creation and containerization
-Running containers locally
+
+Running Docker containers locally
+
 Docker Hub image management
-AWS EC2 instance deployment
+
+AWS EC2 deployment
+
 SSH-based server access
-Docker deployment on a cloud VM
-Security Group configuration
+
+Docker deployment on a cloud virtual machine
+
+EC2 Security Group configuration
+
 Public access to a containerized web application
+
+
+
+---
 
 🏁 Conclusion
 
