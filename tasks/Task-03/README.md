@@ -124,6 +124,10 @@ GitHub Actions successful workflow run
 Docker Hub repository
 Docker Hub image/tag
 
+Linkdin post link
+
+https://www.linkedin.com/posts/basant-k-27062b255_cloudcomputing-devops-maincraftstechnology-ugcPost-7499917193829253120-5Den/?utm_source=share&utm_medium=member_android&rcm=ACoAAD7rRbQBW7ZBR8RNmAMzU9Krj07AzvDB6LI
+
 🎥 Project Demonstration
 
 A demonstration video has been recorded showing the project implementation, GitHub Actions workflow execution and Docker Hub image validation.
