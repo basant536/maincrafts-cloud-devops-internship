@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CloudDeployHub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">CloudDeploy<span>Hub</span></div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#cloud">Cloud</a>
+            <a href="#docker">Docker</a>
+            <a href="#deployment">Deployment</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main id="home">
+        <section class="hero">
+
+            <div class="hero-content">
+                <div class="badge">☁️ Cloud & DevOps Project</div>
+
+                <h1>
+                    Build.<br>
+                    <span>Containerize.</span><br>
+                    Deploy.
+                </h1>
+
+                <p>
+                    A practical demonstration of containerizing a web
+                    application with Docker and deploying it using
+                    modern cloud technologies.
+                </p>
+
+                <div class="buttons">
+                    <a href="#deployment" class="btn primary">Explore Deployment</a>
+                    <a href="#docker" class="btn secondary">Learn Docker</a>
+                </div>
+            </div>
+
+            <div class="terminal">
+                <div class="terminal-header">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+                <div class="terminal-body">
+                    <p><b>$</b> docker build -t cloud-app .</p>
+                    <p><b>$</b> docker run -d -p 80:80 cloud-app</p>
+                    <p><b>$</b> docker push cloud-app</p>
+                    <p class="success">✓ CI/CD pipeline ready</p>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="info" id="cloud">
+            <h2>Cloud Deployment</h2>
+            <p>
+                This project demonstrates how a web application can be
+                packaged into a Docker container and prepared for cloud deployment.
+            </p>
+        </section>
+
+        <section class="info" id="docker">
+            <h2>Docker</h2>
+            <p>
+                Docker provides a consistent environment for building,
+                packaging and running the application.
+            </p>
+        </section>
+
+        <section class="info" id="deployment">
+            <h2>CI/CD Deployment</h2>
+            <p>
+                GitHub Actions automates the Docker image build and
+                delivery process whenever changes are pushed to GitHub.
+            </p>
+        </section>
+
+    </main>
+
+    <footer id="contact">
+        <p>© 2026 CloudDeployHub | Cloud & DevOps Project</p>
+    </footer>
+
+</body>
+</html>
