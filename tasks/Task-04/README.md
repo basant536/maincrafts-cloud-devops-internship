@@ -144,7 +144,7 @@ maincrafts-cloud-devops-internship/
 The application source code is maintained in GitHub.
 
 GitHub Repository:
-[ADD GITHUB REPOSITORY LINK HERE]
+[https://github.com/basant536/maincrafts-cloud-devops-internship/blob/main/tasks/Task-04/README.md]
 
 
 ---
@@ -152,9 +152,6 @@ GitHub Repository:
 2. Docker Image
 
 The web application is containerized using Docker.
-
-Docker Hub Image:
-[ADD DOCKER HUB LINK HERE]
 
 Docker image:
 
@@ -349,7 +346,7 @@ Live Application
 A complete demonstration of the deployment process is available here:
 
 ▶️ Demo Video:
-[ADD VIDEO LINK HERE]
+[https://github.com/basant536/maincrafts-cloud-devops-internship/blob/main/tasks/Task-04/video/task-4%20live%20demo.mp4]
 
 
 ---
@@ -361,7 +358,7 @@ A complete demonstration of the deployment process is available here:
 Project implementation and internship progress have also been shared on LinkedIn.
 
 🔗 LinkedIn Post:
-[ADD LINKEDIN POST HERE]
+[https://www.linkedin.com/posts/basant-k-27062b255_maincrafts-cloudcomputing-devops-ugcPost-7505852083258990592-M6Px/?utm_source=share&utm_medium=member_android&rcm=ACoAAD7rRbQBW7ZBR8RNmAMzU9Krj07AzvDB6LI]
 
 
 ---
@@ -369,16 +366,16 @@ Project implementation and internship progress have also been shared on LinkedIn
 📚 Task Documentation
 
 🔗 Task 4 Documentation:
-[ADD DOCUMENTATION LINK HERE]
+[https://github.com/basant536/maincrafts-cloud-devops-internship/tree/main/tasks/Task-04]
 
 🔗 GitHub Repository:
-[ADD GITHUB LINK HERE]
+[https://github.com/basant536/maincrafts-cloud-devops-internship/blob/main/tasks/Task-04/README.md]
 
 🔗 Demo Video:
-[ADD VIDEO LINK HERE]
+[https://github.com/basant536/maincrafts-cloud-devops-internship/blob/main/tasks/Task-04/video/task-4%20live%20demo.mp4]
 
 🔗 LinkedIn Post:
-[ADD LINKEDIN POST HERE]
+[https://www.linkedin.com/posts/basant-k-27062b255_maincrafts-cloudcomputing-devops-ugcPost-7505852083258990592-M6Px/?utm_source=share&utm_medium=member_android&rcm=ACoAAD7rRbQBW7ZBR8RNmAMzU9Krj07AzvDB6LI]
 
 
 ---
@@ -452,9 +449,9 @@ MCA Student
 
 Connect With Me
 
-🔗 LinkedIn: [ADD YOUR LINKEDIN PROFILE]
+🔗 LinkedIn: [https://www.linkedin.com/in/basant-k-27062b255?utm_source=share_via&utm_content=profile&utm_medium=member_android]
 
-🔗 GitHub: [ADD YOUR GITHUB PROFILE]
+🔗 GitHub: [https://github.com/basant536/maincrafts-cloud-devops-internship/]
 
 
 ---
