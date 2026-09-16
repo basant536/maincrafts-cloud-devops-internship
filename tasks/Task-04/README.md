@@ -42,12 +42,10 @@ The existing Dockerized application and Docker image are reused in this task to 
 
 The Docker image used for deployment is:
 
-```text
-basant222006/cloud-deployment-hub:latest
+"basant222006/cloud-deployment-hub:latest"
 
 ## 🏗️ Architecture
 
-```text
                     ┌──────────────────┐
                     │    Developer     │
                     │   Code Changes   │
