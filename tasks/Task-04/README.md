@@ -34,6 +34,17 @@ The successful deployment is documented through the provided screenshots, demo v
 
 ---
 
+## 🔗 Application Source
+
+Task 4 uses the Dockerized web application developed in **Task 3**.
+
+The existing Dockerized application and Docker image are reused in this task to demonstrate automated deployment on an AWS EC2 Ubuntu instance with Nginx reverse proxy.
+
+The Docker image used for deployment is:
+
+```text
+basant222006/cloud-deployment-hub:latest
+
 ## 🏗️ Architecture
 
 ```text
