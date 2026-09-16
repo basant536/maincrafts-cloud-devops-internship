@@ -1,5 +1,3 @@
-Bilkul bro. Isko professional + internship-submission ready rakhenge, aur links ke liye proper placeholders rahenge. Tum bas apne actual URLs paste kar dena.
-
 Task 4 — Automated Deployment of Dockerized Application on Cloud VM
 
 # 🚀 Task 4 — Automated Deployment of Dockerized Application on Cloud VM with Nginx
