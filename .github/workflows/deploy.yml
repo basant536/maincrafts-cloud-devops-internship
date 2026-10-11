@@ -1,10 +1,11 @@
-name: CI/CD
+name: Task-05 CI/CD
 
 on:
   push:
     branches: [main]
     paths:
       - "tasks/Task-05/**"
+      - ".github/workflows/deploy.yml"
 
 jobs:
   build-test:
@@ -24,10 +25,11 @@ jobs:
       - name: Build images
         run: docker compose build
 
-      - name: Start stack and health check
+      - name: Start core stack and health check
         run: |
+          sed -i 's/\r$//' *.sh
           chmod +x *.sh
-          docker compose up -d
+          docker compose up -d backend frontend postgres redis nginx
           sleep 40
           ./healthcheck.sh
 
@@ -51,5 +53,6 @@ jobs:
           key: ${{ secrets.SSH_KEY }}
           script: |
             cd ~/maincrafts-cloud-devops-internship/tasks/Task-05
+            sed -i 's/\r$//' *.sh
             chmod +x *.sh
             ./deploy.sh

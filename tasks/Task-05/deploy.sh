@@ -5,7 +5,7 @@ cd "$(dirname "$0")"
 PREV_COMMIT=$(git rev-parse HEAD)
 
 echo "Pulling latest code..."
-git pull
+git pull --ff-only
 
 echo "Taking backup before deploy..."
 ./backup.sh
@@ -23,7 +23,7 @@ if ./healthcheck.sh; then
   echo "Deployment successful"
 else
   echo "Health check FAILED, rolling back to $PREV_COMMIT"
-  git checkout "$PREV_COMMIT"
+  git reset --hard "$PREV_COMMIT"
   docker compose up -d --build
   exit 1
 fi
