@@ -1,0 +1,55 @@
+name: CI/CD
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "tasks/Task-05/**"
+
+jobs:
+  build-test:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: tasks/Task-05
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Create env file
+        run: cp .env.example .env
+
+      - name: Validate compose file
+        run: docker compose config --quiet
+
+      - name: Build images
+        run: docker compose build
+
+      - name: Start stack and health check
+        run: |
+          chmod +x *.sh
+          docker compose up -d
+          sleep 40
+          ./healthcheck.sh
+
+      - name: Show logs on failure
+        if: failure()
+        run: docker compose logs --tail 50
+
+      - name: Cleanup
+        if: always()
+        run: docker compose down -v
+
+  deploy:
+    needs: build-test
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy over SSH
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USER }}
+          key: ${{ secrets.SSH_KEY }}
+          script: |
+            cd ~/maincrafts-cloud-devops-internship/tasks/Task-05
+            chmod +x *.sh
+            ./deploy.sh
