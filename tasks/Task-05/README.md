@@ -8,6 +8,12 @@ This project demonstrates how multiple application services can be configured an
 
 The extended architecture includes Prometheus and Grafana for monitoring, centralized log collection, automated database backups, and a GitHub Actions pipeline for build and deployment automation.
 
+After completing and documenting the deployment, the EC2 instance was terminated to prevent unnecessary cloud resource usage and charges.
+
+Therefore, the GitHub Actions deployment check may currently display a failed status because the original EC2 instance used for the demonstration is no longer available.
+
+The successful deployment is documented through the project screenshots, demo video, and documentation.
+
 ## Architecture
 
 ```text
