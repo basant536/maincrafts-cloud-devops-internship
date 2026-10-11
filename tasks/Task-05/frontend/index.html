@@ -1,0 +1,27 @@
+@'
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Task 5 E-Commerce</title>
+</head>
+<body>
+  <h1>Task 5 - E-Commerce Infrastructure</h1>
+  <p>Docker Compose multi-container application</p>
+  <button id="check">Check Backend Health</button>
+  <pre id="result">Click the button to check services.</pre>
+
+  <script>
+    document.getElementById("check").onclick = async () => {
+      const result = document.getElementById("result");
+      try {
+        const response = await fetch("/api/health");
+        result.textContent = JSON.stringify(await response.json(), null, 2);
+      } catch (error) {
+        result.textContent = "API request failed: " + error.message;
+      }
+    };
+  </script>
+</body>
+</html>
