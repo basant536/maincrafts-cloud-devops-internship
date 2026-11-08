@@ -1,0 +1,38 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ .Release.Name }}-html
+data:
+  index.html: |
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>ShopEasy - Cloud-Native E-Commerce</title>
+      <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: Arial, sans-serif; background: #f4f6f8; color: #222; }
+        header { background: #1f3a5f; color: #fff; padding: 18px 30px; display: flex; justify-content: space-between; }
+        nav a { color: #fff; margin-left: 20px; text-decoration: none; }
+        .hero { text-align: center; padding: 40px 20px; background: #e8eef6; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; padding: 30px; max-width: 1100px; margin: auto; }
+        .card { background: #fff; border-radius: 8px; padding: 20px; text-align: center; box-shadow: 0 2px 6px rgba(0,0,0,.1); }
+        .box { height: 140px; border-radius: 6px; background: #c9d6e8; display: flex; align-items: center; justify-content: center; font-size: 22px; color: #1f3a5f; }
+        .price { color: #1f3a5f; font-weight: bold; margin: 8px 0; }
+        button { background: #1f3a5f; color: #fff; border: 0; padding: 8px 16px; border-radius: 4px; }
+        footer { text-align: center; padding: 20px; color: #666; font-size: 14px; }
+      </style>
+    </head>
+    <body>
+      <header><h1>ShopEasy</h1><nav><a href="#">Home</a><a href="#">Products</a><a href="#">Cart</a></nav></header>
+      <div class="hero"><h2>Welcome to ShopEasy</h2><p>Running on Kubernetes with Helm, Ingress, HPA and GitOps</p></div>
+      <div class="grid">
+        <div class="card"><div class="box">Laptop</div><h3>Laptop</h3><div class="price">Rs. 55,000</div><button>Add to Cart</button></div>
+        <div class="card"><div class="box">Phone</div><h3>Smartphone</h3><div class="price">Rs. 25,000</div><button>Add to Cart</button></div>
+        <div class="card"><div class="box">Audio</div><h3>Headphones</h3><div class="price">Rs. 3,500</div><button>Add to Cart</button></div>
+        <div class="card"><div class="box">Watch</div><h3>Smart Watch</h3><div class="price">Rs. 8,000</div><button>Add to Cart</button></div>
+      </div>
+      <footer>Kubernetes Enterprise Platform | Maincrafts Task 6</footer>
+    </body>
+    </html>

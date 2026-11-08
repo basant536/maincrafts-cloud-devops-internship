@@ -1,0 +1,52 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: backend
+  namespace: secure-demo
+  labels:
+    app: backend
+spec:
+  containers:
+  - name: nginx
+    image: nginx:1.27
+    resources:
+      requests:
+        cpu: 20m
+        memory: 32Mi
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: backend
+  namespace: secure-demo
+spec:
+  selector:
+    app: backend
+  ports:
+  - port: 80
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: frontend
+  namespace: secure-demo
+  labels:
+    role: frontend
+spec:
+  containers:
+  - name: busybox
+    image: busybox:1.28
+    command: ["sleep", "3600"]
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: other
+  namespace: secure-demo
+  labels:
+    role: other
+spec:
+  containers:
+  - name: busybox
+    image: busybox:1.28
+    command: ["sleep", "3600"]
